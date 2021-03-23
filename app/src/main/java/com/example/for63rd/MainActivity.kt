@@ -9,12 +9,13 @@ import android.util.Log
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 
+//classはプログラムの1単位ですが初心者が1日目で学ぶにはあまりにも難しい(完全な理解は僕も3カ月かかりました。ちなみに初めて理解できた時は悟ったような気分になります)ので今回は触れません。
 class MainActivity : AppCompatActivity() ,View.OnClickListener{
 
     //整数をいれる「number」という名前の箱を作成します(=コンピューターのメモリを確保します)。最初の値は0にしています(慣習です)。
     var number : Int = 0
 
-    //onCreateに囲まれた箇所(15から38行目)はActivityが作られるときに最初に実行されます。
+    //onCreateに囲まれた箇所(19から42行目)はActivityが作られるときに最初に実行されます。
     override fun onCreate(savedInstanceState: Bundle?) {
         //このダブルスラッシュから始まる行のことをコメントといいます。ここはコンピューターには無視されるので好きに書いてOK。もちろん書かなくてもいいです。
         // 今回はこのソースコードの内容の説明を書いているので僕の口頭での説明が分かんなくなったらここを読んでくれればわかると思います。もちろんわかんなかったら気軽に質問してください。
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
         textView_number.text = "0"
 
         //この2行でボタンにOnClickListenerをsetします(そのままですね)。OnClickListenerがsetされたViewがClickされると参照先のonClickイベントが実行されます。
-        //今回は「this」なので40行目から始まるonClick()が実行されます。
+        //今回は「this」なので45行目から始まるonClick()が実行されます。
         button_minus.setOnClickListener(this)
         button_plus.setOnClickListener(this)
     }
