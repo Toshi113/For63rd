@@ -1,5 +1,8 @@
+//package文でこのプログラムがどの組織に所属するのかを区別します。世界にはたくさんのプログラムがあるのでこうでもしないと同一名のプログラムが生まれてしまい区別できないのです。
+//僕らの場合は聖光学院がseiko.ac.jpなので本番では「jp.ac.seiko」というドメインでアプリを作成します。
 package com.example.for63rd
 
+//import文ににょって(Android作成元であるGoogleが作った)必要なプログラムをロードします。自分で書けなくてもAndroidStudioが勝手に保管してくれるのでそこまで気にしなくてOKです。
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,7 +14,7 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
     //整数をいれる「number」という名前の箱を作成します(=コンピューターのメモリを確保します)。最初の値は0にしています(慣習です)。
     var number : Int = 0
 
-    //onCreateに囲まれた箇所(15から37行目)はActivityが作られるときに最初に実行されます。
+    //onCreateに囲まれた箇所(15から38行目)はActivityが作られるときに最初に実行されます。
     override fun onCreate(savedInstanceState: Bundle?) {
         //このダブルスラッシュから始まる行のことをコメントといいます。ここはコンピューターには無視されるので好きに書いてOK。もちろん書かなくてもいいです。
         // 今回はこのソースコードの内容の説明を書いているので僕の口頭での説明が分かんなくなったらここを読んでくれればわかると思います。もちろんわかんなかったら気軽に質問してください。
@@ -20,7 +23,7 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
         複数行にわたる
         コメントを書くこともできます。(ダブルスラッシュは1行のコメントしか書けません)
         基本的にコメントは自分や他人がこのプログラムを見たときにこれ何してるんだっけとならないように書くメモのようなものです。
-        先ほどのダブルスラッシュ(1行だけならそののほうが見やすいとされています)と読みやすいほうを使い分けましょう。
+        先ほどのダブルスラッシュ(1行だけならそのほうが見やすいとされています)と読みやすいほうを使い分けましょう。
         今回は皆さんが分かりやすいようにとんでもない量を書いていますが普通はわかりづらい箇所に簡単なメモを書く程度です。
         */
 
@@ -32,7 +35,7 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
         textView_number.text = "0"
 
         //この2行でボタンにOnClickListenerをsetします(そのままですね)。OnClickListenerがsetされたViewがClickされると参照先のonClickイベントが実行されます。
-        //今回は「this」なので38行目から始まるonClick()が実行されます。
+        //今回は「this」なので40行目から始まるonClick()が実行されます。
         button_minus.setOnClickListener(this)
         button_plus.setOnClickListener(this)
     }
