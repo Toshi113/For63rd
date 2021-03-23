@@ -2,7 +2,7 @@
 //僕らの場合は聖光学院がseiko.ac.jpなので本番では「jp.ac.seiko」というドメインでアプリを作成します。
 package com.example.for63rd
 
-//import文ににょって(Android作成元であるGoogleが作った)必要なプログラムをロードします。自分で書けなくてもAndroidStudioが勝手に保管してくれるのでそこまで気にしなくてOKです。
+//import文によって(Android作成元であるGoogleが作った)必要なプログラムをロードします。自分で書けなくてもAndroidStudioが勝手に保管してくれるのでそこまで気にしなくてOKです。
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener{
     //onCreateに囲まれた箇所(19から42行目)はActivityが作られるときに最初に実行されます。
     override fun onCreate(savedInstanceState: Bundle?) {
         //このダブルスラッシュから始まる行のことをコメントといいます。ここはコンピューターには無視されるので好きに書いてOK。もちろん書かなくてもいいです。
-        // 今回はこのソースコードの内容の説明を書いているので僕の口頭での説明が分かんなくなったらここを読んでくれればわかると思います。もちろんわかんなかったら気軽に質問してください。
+        //今回はこのソースコードの内容の説明を書いているので僕の口頭での説明が分かんなくなったらここを読んでくれればわかると思います。もちろん分からなかったら気軽に質問してください。
 
         /*こんな感じでスラッシュとコメ印で囲むことで
         複数行にわたる
